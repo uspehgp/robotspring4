@@ -38,7 +38,7 @@ public class RobotspringApplication {
 
         //SpringApplication.run(RobotspringApplication.class, args);
 
-        T1000Pool t1000Pool = (T1000Pool) context.getBean("T1000Pool");
+        T1000Pool t1000Pool = (T1000Pool) context.getBean("t1000Pool");
         t1000Pool.action();
 
         ((ConfigurableApplicationContext)context).close();
