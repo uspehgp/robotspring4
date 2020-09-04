@@ -11,7 +11,7 @@
 
     <bean id="actionReplacer" class="com.uspehgp.robotspring.replacer.ActionReplacer"/>
 
-    <bean id="t1000" parent="BaseModel" scope="prototype">
+    <bean id="t1000" class="com.uspehgp.robotspring.impls.robot.ModelT1000" parent="baseModel" scope="prototype">
 
         <constructor-arg value="silver" index="3" type="java.lang.String"/>
         <constructor-arg value="2020" index="4" type="int"/>
@@ -22,7 +22,7 @@
     </bean>
 
 
-    <bean id="BaseModel" abstract="true" class="com.uspehgp.robotspring.impls.robot.ModelT1000">
+    <bean id="baseModel" abstract="true" class="com.uspehgp.robotspring.abstracts.robot.BaseModel">
 
         <constructor-arg ref="sonyHand" index="0"/>
         <constructor-arg ref="sonyLeg" index="1"/>
