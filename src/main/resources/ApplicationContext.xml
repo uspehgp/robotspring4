@@ -22,7 +22,7 @@
 
                 <entry key="2005" value-ref="t1000" />
                 <entry key="2006" value-ref="t1000" />
-                <entry key="2005">
+                <entry key="2007">
                     <bean class="com.uspehgp.robotspring.impls.robot.ModelT1000"
                           parent="baseModel">
 
