@@ -15,31 +15,8 @@ public class RobotspringApplication {
     public static void main(String[] args) {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-//        ModelT1000 t1000 = (ModelT1000) context.getBean("t1000");
-//        System.out.println(t1000);
-//        t1000 = (ModelT1000) context.getBean("t1000");
-//        System.out.println(t1000);
-//        t1000.dance();
- //       t1000.action();
-
-//        RobotConveyor t1000Conveyor = (RobotConveyor)context.getBean("t1000Conveyor");
-
-//        Robot terminator1 = t1000Conveyor.createRobot();
-//        Robot terminator2 = t1000Conveyor.createRobot();
-//        Robot terminator3 = t1000Conveyor.createRobot();
-//
-//        System.out.println("terminator1 - " + terminator1);
-//        System.out.println("terminator2 - " + terminator2);
-//        System.out.println("terminator3 - " + terminator3);
-//
-//
-//
-//        terminator1.action();
-
-        //SpringApplication.run(RobotspringApplication.class, args);
-
-        T1000Pool t1000Pool = (T1000Pool) context.getBean("t1000Pool");
-        t1000Pool.action();
+        T1000Pool t1000GoldenPool = (T1000Pool) context.getBean("t1000ColdenPool");
+        t1000GoldenPool.beginShow();
 
         ((ConfigurableApplicationContext)context).close();
     }

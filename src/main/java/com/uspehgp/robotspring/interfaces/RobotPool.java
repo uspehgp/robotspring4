@@ -1,9 +1,10 @@
 package com.uspehgp.robotspring.interfaces;
 
-import java.util.Map;
+import java.util.Collection;
+import java.util.List;
 
 public interface RobotPool {
 
-	Map<String, Robot> getRobotCollection();
+	Collection<Robot> getRobotCollection();
 
 }
